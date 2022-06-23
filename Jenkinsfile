@@ -35,6 +35,10 @@ pipeline {
                         
          }
       }
-       
+      stage('Email alert'){
+         steps {
+         emailext body: 'Hello world!', subject: 'Jenkins console output', to: '2184736@cognizant.com'
+         }
+      }
    }
   }
