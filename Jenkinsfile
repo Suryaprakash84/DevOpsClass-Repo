@@ -37,7 +37,7 @@ pipeline {
       }
       stage('Email alert'){
          steps {
-         emailext body: 'Hello world!', subject: 'Jenkins console output', to: 'suryaprakash.linux94@gmail.com'
+         emailext body: 'Hello world!', subject: 'Jenkins console output', to: 'suryachintu.m@gmail.com'
          }
       }
    }
